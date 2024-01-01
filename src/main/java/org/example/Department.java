@@ -12,6 +12,7 @@ class Department {
             employee.position = position;
             employee.experience=experience;
 
+
             employees[size] = employee;
             size++;
         }
@@ -19,6 +20,8 @@ class Department {
             System.out.println("Bu departmanın çalışan sayısı doldu");
         }
     }
+
+
 
     Employee[]  getEmployees(){
         return employees;
