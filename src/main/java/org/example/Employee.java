@@ -9,11 +9,11 @@ class Employee {
 
         double extraBonus= 1000;
         int dailySalary = 400;
-        int monthlySalary =25;
-        double salary = dailySalary*monthlySalary;
+        int monthlyWorkingDays =25;
+        double salary = dailySalary*monthlyWorkingDays;
 
-        if(workedDays>monthlySalary){
-            int extraBonusDays = workedDays -monthlySalary ;
+        if(workedDays>monthlyWorkingDays){
+            int extraBonusDays = workedDays -monthlyWorkingDays ;
             double extraBonusTotal = extraBonusDays * extraBonus;
             salary += extraBonusTotal ;
 
