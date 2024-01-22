@@ -16,6 +16,7 @@ public class CalculateSalary {
         System.out.println(testDepartment[0].position+ " unvanı olan " + testDepartment[0].name + " isimli çalışanın aylık maaşı " + testDepartment[0].calculateSalary(35) + " TL");
         System.out.println(testDepartment[1].position+ " unvanı olan " + testDepartment[1].name + " isimli çalışanın aylık maaşı " + testDepartment[1].calculateSalary(28)+ " TL");
 
+
     }
 }
 

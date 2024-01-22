@@ -42,6 +42,8 @@ public enum EnumPlanets {
                 ", Dönme Süresi: " + donmeSuresi + " gün";
     }
 
+    
+
     public static void main(String[] args) {
         // Örnek gezegenlerin bilgilerini yazdırma
         System.out.println(EnumPlanets.MERCURY);
