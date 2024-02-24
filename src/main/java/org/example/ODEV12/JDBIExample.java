@@ -12,16 +12,16 @@ public class JDBIExample {
 
         String url = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11686526";
         String kullaniciAdi = "sql11686526";
-        String sifre = "9L9fSlcXpY";
+        String sifre = "9L9fSIcXpY";
 
         // JDBI nesnesinin oluşturulması ve bağlantının alınması
         Jdbi jdbi = Jdbi.create(url, kullaniciAdi, sifre);
         try (Handle handle = jdbi.open()) {
             // SQL sorgusunun hazırlanması ve çalıştırılması
-            handle.execute("CREATE TABLE IF NOT EXISTS ad_soyad (id SERIAL PRIMARY KEY, ad VARCHAR(100)), soyad VARCHAR(100))");
-            handle.execute("INSERT INTO ad_soyad (ad,soyad) VALUES (?)", "Gokce","Ozguven");
-            handle.execute("INSERT INTO ad_soyad (ad,soyad) VALUES (?)", "Umut","Ozguven");
-            handle.execute("INSERT INTO ad_soyad (ad,soyad) VALUES (?)", "Gokhan","Ozguven");
+            handle.execute("CREATE TABLE IF NOT EXISTS ad_soyad (id SERIAL PRIMARY KEY, ad VARCHAR(100), soyad VARCHAR(100))");
+            handle.execute("INSERT INTO ad_soyad (ad,soyad) VALUES (?,?)", "Gokce", "Ozguven");
+            handle.execute("INSERT INTO ad_soyad (ad,soyad) VALUES (?,?)", "Umut", "Ozguven");
+            handle.execute("INSERT INTO ad_soyad (ad,soyad) VALUES (?,?)", "Gokhan", "Ozguven");
 
             System.out.println("Tüm veriler:");
             handle.createQuery("SELECT * FROM ad_soyad")
