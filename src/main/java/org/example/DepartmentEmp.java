@@ -1,11 +1,13 @@
 package org.example;
 
-class Department {
+
+public class DepartmentEmp {
 
     Employee[] employees = new Employee[20];
     int size = 0;
 
-    void addEmployee(String name, String position, int experience){
+
+    public void addEmployee(String name, String position, int experience){
         if(size< employees.length){
             Employee employee = new Employee();
             employee.name = name;
@@ -23,7 +25,7 @@ class Department {
 
 
 
-    Employee[]  getEmployees(){
+    public Employee[]  getEmployees(){
         return employees;
 
     }

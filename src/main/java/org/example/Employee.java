@@ -1,6 +1,6 @@
 package org.example;
 
-class Employee {
+public class Employee {
     public String name;
     public String position;
     public int experience;
