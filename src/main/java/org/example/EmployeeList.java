@@ -4,7 +4,7 @@ package org.example;
 public class EmployeeList {
     public static void main(String[] args) {
 
-        Department department= new Department();
+        DepartmentEmp department= new DepartmentEmp();
 
 
         department.addEmployee("Gökçe Özgüven","Test Analyst", 6);
